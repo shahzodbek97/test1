@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %} Detail {% endblock title %}
+
+{% block content %}
+<div class="container">
+<div class="card" style="width: 18rem;">
+   <img class="card-img-top" src="{{ det.img.url }}"  alt="rasm u">
+  <div class="card-body">
+    <h5 class="card-title">{{ det.title }}</h5>
+    <p class="card-text">{{ det.description }}</p>
+    <a href="{% url 'home' %}" class="btn btn-primary"> Go back </a>
+  </div>
+</div>
+</div>
+{% endblock content %}
